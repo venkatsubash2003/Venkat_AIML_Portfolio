@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Venkat Sai Subash Panchakarla | AI/ML Engineer</title>
+  <meta name="description" content="Portfolio of Venkat Sai Subash Panchakarla — AI/ML Engineer specializing in low-latency LLM inference, RAG systems, distributed vector search, and cloud-native ML systems." />
+  <meta name="theme-color" content="#060816" />
+  <meta property="og:title" content="Venkat Sai Subash Panchakarla | AI/ML Engineer" />
+  <meta property="og:description" content="Low-latency LLM inference, RAG pipelines, MLOps, feature stores, and production AI systems." />
+  <meta property="og:type" content="website" />
+  <!-- Browser-proof VS favicon setup. Root-level files help Safari, Chrome, and local previews resolve the tab icon reliably. -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png?v=4" />
+  <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png?v=4" />
+  <link rel="icon" href="./favicon.ico?v=4" sizes="any" />
+  <link rel="shortcut icon" href="./favicon.ico?v=4" />
+  <link rel="icon" href="./vs-tab-icon.svg?v=4" type="image/svg+xml" />
+  <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png?v=4" />
+  <link rel="mask-icon" href="./safari-pinned-tab.svg?v=4" color="#5be7ff" />
+  <link rel="manifest" href="./site.webmanifest?v=4" />
+  <meta name="msapplication-TileColor" content="#060816" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="noise" aria-hidden="true"></div>
+  <div class="scroll-progress" aria-hidden="true"><span></span></div>
+  <canvas id="neural-canvas" aria-hidden="true"></canvas>
+  <div class="cursor-light" aria-hidden="true"></div>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="top">
+    <a class="brand magnetic" href="#top" aria-label="Venkat Sai Subash home">
+      <span class="brand-mark">VS</span>
+      <span class="brand-copy">
+        <strong>Venkat Sai Subash</strong>
+        <small>AI Systems Engineer</small>
+      </span>
+    </a>
+    <nav class="desktop-nav" aria-label="Primary navigation">
+      <a href="#impact">Impact</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Stack</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <div class="header-socials" aria-label="Primary social links">
+        <a class="social-icon magnetic" href="https://www.linkedin.com/in/venkat-sai-subash-panchakarla-b166ba23a" target="_blank" rel="noreferrer" aria-label="Open LinkedIn profile" title="LinkedIn"><svg class="link-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M6.94 8.97H3.75v10.44h3.19V8.97ZM5.35 7.55a1.84 1.84 0 1 0 0-3.68 1.84 1.84 0 0 0 0 3.68Zm14.9 6.1c0-3.15-1.68-4.62-3.92-4.62-1.8 0-2.6.99-3.05 1.68V8.97h-3.05c.04.98 0 10.44 0 10.44h3.18v-5.83c0-.31.02-.62.11-.84.25-.62.82-1.26 1.77-1.26 1.25 0 1.75.95 1.75 2.35v5.58h3.18v-5.76h.03Z"/></svg></a>
+        <a class="social-icon magnetic" href="https://github.com/venkatsubash2003" target="_blank" rel="noreferrer" aria-label="Open GitHub profile" title="GitHub"><svg class="link-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.75a9.25 9.25 0 0 0-2.93 18.03c.46.08.63-.2.63-.44 0-.22-.01-.94-.01-1.7-2.32.43-2.92-.57-3.1-1.1-.1-.27-.55-1.1-.94-1.33-.32-.17-.78-.6-.01-.62.72-.01 1.24.67 1.41.95.83 1.39 2.16.99 2.68.76.08-.6.32-1 .58-1.23-2.04-.23-4.18-1.02-4.18-4.53 0-1 .36-1.82.95-2.46-.1-.23-.41-1.17.09-2.43 0 0 .77-.25 2.54.94.74-.2 1.52-.31 2.3-.31s1.56.1 2.3.31c1.76-1.2 2.54-.94 2.54-.94.5 1.26.18 2.2.09 2.43.59.64.95 1.46.95 2.46 0 3.52-2.15 4.3-4.19 4.53.33.29.62.84.62 1.7 0 1.23-.01 2.22-.01 2.53 0 .24.17.53.63.44A9.25 9.25 0 0 0 12 2.75Z"/></svg></a>
+        <a class="social-icon magnetic" href="mailto:venkatsaisubash.2003@gmail.com?subject=AI%2FML%20Engineering%20Opportunity%20for%20Venkat" aria-label="Send Venkat an email" title="Email"><svg class="link-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3.5 6.75A2.75 2.75 0 0 1 6.25 4h11.5a2.75 2.75 0 0 1 2.75 2.75v10.5A2.75 2.75 0 0 1 17.75 20H6.25a2.75 2.75 0 0 1-2.75-2.75V6.75Zm2.05-.22 6.45 5.12 6.45-5.12a1.25 1.25 0 0 0-.7-.22H6.25c-.26 0-.5.08-.7.22Zm13.45 2.02-6.23 4.95a1.25 1.25 0 0 1-1.54 0L5 8.55v8.7c0 .69.56 1.25 1.25 1.25h11.5c.69 0 1.25-.56 1.25-1.25v-8.7Z"/></svg></a>
+      </div>
+      <a class="resume-button magnetic" href="assets/VenkatSaiSubash_AIML.pdf" target="_blank" rel="noreferrer">Resume</a>
+      <button class="icon-button magnetic" id="command-open" aria-label="Open command palette" title="Open command palette">⌘K</button>
+      <button class="sound-toggle magnetic" id="sound-toggle" type="button" aria-pressed="false" title="Enable soothing ambient music">
+        <span class="sound-bars" aria-hidden="true"><i></i><i></i><i></i></span>
+        <span class="sound-label">Sound</span>
+      </button>
+    </div>
+  </header>
+
+  <aside class="section-rail" aria-label="Section shortcuts">
+    <a href="#top" data-label="Intro"></a>
+    <a href="#impact" data-label="Impact"></a>
+    <a href="#experience" data-label="Experience"></a>
+    <a href="#projects" data-label="Projects"></a>
+    <a href="#skills" data-label="Stack"></a>
+    <a href="#contact" data-label="Contact"></a>
+  </aside>
+
+  <main id="main">
+    <section class="hero section-shell" id="hero" data-section>
+      <div class="hero-grid">
+        <div class="hero-copy reveal">
+          <div class="eyebrow"><span class="pulse-dot"></span> Available for AI/ML engineering roles</div>
+          <h1>
+            Building <span class="gradient-text">low-latency AI systems</span> that turn research into production-grade impact.
+          </h1>
+          <p class="hero-lede">
+            Recent M.S. graduate with a 4.0 GPA, specializing in LLM inference, Retrieval-Augmented Generation, distributed vector search, and cloud-native ML pipelines.
+          </p>
+          <div class="hero-actions">
+            <a class="primary-cta magnetic" href="mailto:venkatsaisubash.2003@gmail.com?subject=AI%2FML%20Engineering%20Opportunity%20for%20Venkat">Start a conversation</a>
+            <a class="secondary-cta magnetic" href="#projects">Explore case studies</a>
+          </div>
+          <div class="hero-contact-strip" aria-label="Contact links">
+            <a href="mailto:venkatsaisubash.2003@gmail.com" aria-label="Email Venkat"><svg class="link-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3.5 6.75A2.75 2.75 0 0 1 6.25 4h11.5a2.75 2.75 0 0 1 2.75 2.75v10.5A2.75 2.75 0 0 1 17.75 20H6.25a2.75 2.75 0 0 1-2.75-2.75V6.75Zm2.05-.22 6.45 5.12 6.45-5.12a1.25 1.25 0 0 0-.7-.22H6.25c-.26 0-.5.08-.7.22Zm13.45 2.02-6.23 4.95a1.25 1.25 0 0 1-1.54 0L5 8.55v8.7c0 .69.56 1.25 1.25 1.25h11.5c.69 0 1.25-.56 1.25-1.25v-8.7Z"/></svg><span>venkatsaisubash.2003@gmail.com</span></a>
+            <a href="https://www.linkedin.com/in/venkat-sai-subash-panchakarla-b166ba23a" target="_blank" rel="noreferrer" aria-label="Open Venkat's LinkedIn"><svg class="link-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M6.94 8.97H3.75v10.44h3.19V8.97ZM5.35 7.55a1.84 1.84 0 1 0 0-3.68 1.84 1.84 0 0 0 0 3.68Zm14.9 6.1c0-3.15-1.68-4.62-3.92-4.62-1.8 0-2.6.99-3.05 1.68V8.97h-3.05c.04.98 0 10.44 0 10.44h3.18v-5.83c0-.31.02-.62.11-.84.25-.62.82-1.26 1.77-1.26 1.25 0 1.75.95 1.75 2.35v5.58h3.18v-5.76h.03Z"/></svg><span>LinkedIn</span></a>
+            <a href="https://github.com/venkatsubash2003" target="_blank" rel="noreferrer" aria-label="Open Venkat's GitHub"><svg class="link-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.75a9.25 9.25 0 0 0-2.93 18.03c.46.08.63-.2.63-.44 0-.22-.01-.94-.01-1.7-2.32.43-2.92-.57-3.1-1.1-.1-.27-.55-1.1-.94-1.33-.32-.17-.78-.6-.01-.62.72-.01 1.24.67 1.41.95.83 1.39 2.16.99 2.68.76.08-.6.32-1 .58-1.23-2.04-.23-4.18-1.02-4.18-4.53 0-1 .36-1.82.95-2.46-.1-.23-.41-1.17.09-2.43 0 0 .77-.25 2.54.94.74-.2 1.52-.31 2.3-.31s1.56.1 2.3.31c1.76-1.2 2.54-.94 2.54-.94.5 1.26.18 2.2.09 2.43.59.64.95 1.46.95 2.46 0 3.52-2.15 4.3-4.19 4.53.33.29.62.84.62 1.7 0 1.23-.01 2.22-.01 2.53 0 .24.17.53.63.44A9.25 9.25 0 0 0 12 2.75Z"/></svg><span>GitHub</span></a>
+            <span>Cincinnati, OH</span>
+          </div>
+        </div>
+
+        <div class="mission-panel reveal delay-1" aria-label="AI mission control panel">
+          <div class="orb-wrap">
+            <div class="orb-core"></div>
+            <div class="orb-ring ring-one"></div>
+            <div class="orb-ring ring-two"></div>
+            <div class="orb-ring ring-three"></div>
+          </div>
+          <div class="panel-topline">
+            <span>RAG / LLM Runtime</span>
+            <strong>ONLINE</strong>
+          </div>
+          <div class="telemetry-grid">
+            <article>
+              <small>Inference latency</small>
+              <strong>-35%</strong>
+            </article>
+            <article>
+              <small>Knowledge scale</small>
+              <strong>10×</strong>
+            </article>
+            <article>
+              <small>Feature setup</small>
+              <strong>-40%</strong>
+            </article>
+            <article>
+              <small>Review effort</small>
+              <strong>-75%</strong>
+            </article>
+          </div>
+          <div class="terminal-card" aria-label="Portfolio terminal animation">
+            <div class="terminal-controls"><span></span><span></span><span></span></div>
+            <pre id="terminal-lines" aria-live="polite"></pre>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="impact section-shell" id="impact" data-section>
+      <div class="section-heading reveal">
+        <p class="eyebrow">Impact dashboard</p>
+        <h2>Quantified proof, not generic portfolio filler.</h2>
+        <p>Every visual block is built around measurable outcomes from AI systems, data infrastructure, and ML platform work.</p>
+      </div>
+      <div class="impact-grid">
+        <article class="impact-card reveal">
+          <div class="metric">35%</div>
+          <h3>Faster LLM inference</h3>
+          <p>Optimized Llama 3.1 and BERT runtime scheduling, execution graphs, and P95 latency profiling.</p>
+        </article>
+        <article class="impact-card reveal delay-1">
+          <div class="metric">40%</div>
+          <h3>Higher retrieval relevance</h3>
+          <p>Built semantic chunking and ranked retrieval with systematic LLM evaluation for AI-powered search.</p>
+        </article>
+        <article class="impact-card reveal delay-2">
+          <div class="metric">2M+</div>
+          <h3>Records modeled</h3>
+          <p>Engineered unsupervised AutoEncoder pipelines for crime similarity and real-time risk scoring.</p>
+        </article>
+        <article class="impact-card reveal delay-3">
+          <div class="metric">4.0</div>
+          <h3>M.S. GPA</h3>
+          <p>Graduated from the University of Cincinnati with deep coursework in ML, NLP, cloud, and data engineering.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="architecture section-shell" data-section>
+      <div class="section-heading reveal">
+        <p class="eyebrow">Signature strengths</p>
+        <h2>Where AI research becomes a reliable product.</h2>
+      </div>
+      <div class="architecture-grid">
+        <article class="architecture-card reveal">
+          <span class="card-index">01</span>
+          <h3>Low-latency inference</h3>
+          <p>Profiling, quantization-ready serving, FastAPI services, memory-efficient embeddings, vLLM/TensorRT-aware production thinking.</p>
+        </article>
+        <article class="architecture-card reveal delay-1">
+          <span class="card-index">02</span>
+          <h3>RAG and vector search</h3>
+          <p>Chunking, FAISS indexing, embeddings, evaluation loops, and retrieval accuracy improvements under high query concurrency.</p>
+        </article>
+        <article class="architecture-card reveal delay-2">
+          <span class="card-index">03</span>
+          <h3>Cloud-native ML pipelines</h3>
+          <p>Snowflake, BigQuery, AWS, feature stores, schema validation, anomaly detection, observability, CI/CD, and reproducible experiments.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="experience section-shell" id="experience" data-section>
+      <div class="section-heading reveal">
+        <p class="eyebrow">Experience timeline</p>
+        <h2>Production AI + data platforms with measurable acceleration.</h2>
+      </div>
+      <div class="timeline">
+        <article class="timeline-item reveal">
+          <div class="timeline-date">Mar 2025 — Present</div>
+          <div class="timeline-card">
+            <div class="role-line">
+              <h3>ML Engineer / Data Analyst</h3>
+              <span>University of Cincinnati · Cincinnati, OH</span>
+            </div>
+            <p>Building ML-ready data systems across cloud-native ETL, validation, feature engineering, and observability.</p>
+            <ul class="achievement-list">
+              <li>Reduced manual preprocessing by <strong>30%</strong> through scalable Snowflake, BigQuery, and ETL workflows.</li>
+              <li>Cut upstream data inconsistencies by <strong>25%</strong> with automated schema validation and anomaly detection.</li>
+              <li>Reduced ML experiment setup by <strong>40%</strong> using centralized feature stores and reusable workflows.</li>
+              <li>Improved pipeline throughput by <strong>20%</strong> and reduced failure detection time by <strong>35%</strong>.</li>
+            </ul>
+          </div>
+        </article>
+        <article class="timeline-item reveal delay-1">
+          <div class="timeline-date">Apr 2023 — Apr 2024</div>
+          <div class="timeline-card">
+            <div class="role-line">
+              <h3>AI/ML Engineer Intern</h3>
+              <span>Cybereconn · Gurgaon, India</span>
+            </div>
+            <p>Designed LLM inference and retrieval systems with FastAPI, BERT embeddings, FAISS, and Llama 3.1.</p>
+            <ul class="achievement-list">
+              <li>Reduced end-to-end inference latency by <strong>35%</strong> through scheduling and execution graph optimization.</li>
+              <li>Improved contextual relevance by <strong>40%</strong> with semantic chunking and ranked retrieval architectures.</li>
+              <li>Improved production throughput by <strong>25%</strong> using memory-efficient embedding workflows.</li>
+              <li>Scaled RAG knowledge bases by <strong>10×</strong> while maintaining performance under high concurrency.</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="projects section-shell" id="projects" data-section>
+      <div class="section-heading reveal">
+        <p class="eyebrow">Featured case studies</p>
+        <h2>Four projects presented like investor-grade product launches.</h2>
+        <p>Click any case study for the expanded system view, stack, and measurable result.</p>
+      </div>
+      <div class="project-grid">
+        <article class="project-card reveal" data-project="careerpilot">
+          <div class="project-visual visual-career"><span>CP</span></div>
+          <div class="project-body">
+            <div class="project-kicker">LLM Job Intelligence</div>
+            <h3>CareerPilot AI</h3>
+            <p>AI job application assistant for international students with visa sponsorship classification, ATS scoring, resume-JD fit, cover letters, recruiter email drafting, and SQLite tracking.</p>
+            <div class="tags"><span>LangChain</span><span>Ollama</span><span>Llama 3.1</span><span>Streamlit</span></div>
+          </div>
+        </article>
+        <article class="project-card reveal delay-1" data-project="research">
+          <div class="project-visual visual-research"><span>RA</span></div>
+          <div class="project-body">
+            <div class="project-kicker">Research Intelligence</div>
+            <h3>LLM Research Paper Analysis Engine</h3>
+            <p>FastAPI platform for summarizing, clustering, and comparing papers through LLM-driven semantic analysis.</p>
+            <div class="tags"><span>LangChain</span><span>FastAPI</span><span>NLP</span><span>Python</span></div>
+          </div>
+        </article>
+        <article class="project-card reveal delay-2" data-project="crime">
+          <div class="project-visual visual-crime"><span>RS</span></div>
+          <div class="project-body">
+            <div class="project-kicker">Risk Modeling</div>
+            <h3>Crime Similarity & Risk Prediction</h3>
+            <p>AutoEncoder-based unsupervised system across 2M+ records with optimized feature engineering and real-time risk scoring.</p>
+            <div class="tags"><span>AutoEncoders</span><span>Scikit-learn</span><span>Python</span><span>2M+ rows</span></div>
+          </div>
+        </article>
+        <article class="project-card reveal delay-3" data-project="farmers">
+          <div class="project-visual visual-market"><span>FM</span></div>
+          <div class="project-body">
+            <div class="project-kicker">Analytics Platform</div>
+            <h3>Farmers Market Analytics</h3>
+            <p>AI-assisted Tableau and BigQuery dashboard system consolidating Smartsheets forms into unified reporting workflows.</p>
+            <div class="tags"><span>Tableau</span><span>BigQuery</span><span>SQL</span><span>ETL</span></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="skills section-shell" id="skills" data-section>
+      <div class="section-heading reveal">
+        <p class="eyebrow">Technical arsenal</p>
+        <h2>A stack built for end-to-end AI product delivery.</h2>
+      </div>
+      <div class="skill-console reveal">
+        <div class="console-header">
+          <span></span><span></span><span></span>
+          <strong>venkat@ai-systems:~/stack</strong>
+        </div>
+        <div class="skill-tabs" role="tablist" aria-label="Skill categories">
+          <button class="skill-tab active" data-filter="ai">AI/ML</button>
+          <button class="skill-tab" data-filter="mlops">MLOps</button>
+          <button class="skill-tab" data-filter="data">Data</button>
+          <button class="skill-tab" data-filter="backend">Backend</button>
+        </div>
+        <div class="skill-grid" id="skill-grid">
+          <article class="skill-category active" data-cat="ai">
+            <div class="skill-category-head">
+              <span class="skill-category-icon" aria-hidden="true">∑</span>
+              <div>
+                <h3>AI/ML</h3>
+                <p>Modeling, transformer workflows, experimentation, and intelligent application layers.</p>
+              </div>
+            </div>
+            <div class="skill-list">
+              <span class="skill-chip"><i>PT</i>PyTorch</span><span class="skill-chip"><i>TF</i>TensorFlow</span><span class="skill-chip"><i>KR</i>Keras</span><span class="skill-chip"><i>SK</i>Scikit-learn</span><span class="skill-chip"><i>HF</i>Hugging Face</span><span class="skill-chip"><i>LC</i>LangChain</span><span class="skill-chip"><i>LG</i>LangGraph</span><span class="skill-chip"><i>PE</i>LoRA/PEFT</span><span class="skill-chip"><i>XG</i>XGBoost</span><span class="skill-chip"><i>NL</i>NLP</span><span class="skill-chip"><i>CV</i>Computer Vision</span>
+            </div>
+          </article>
+          <article class="skill-category" data-cat="mlops">
+            <div class="skill-category-head">
+              <span class="skill-category-icon" aria-hidden="true">⚙</span>
+              <div>
+                <h3>MLOps</h3>
+                <p>RAG, vector search, serving, evaluation, orchestration, and production reliability.</p>
+              </div>
+            </div>
+            <div class="skill-list">
+              <span class="skill-chip"><i>RG</i>RAG Pipelines</span><span class="skill-chip"><i>FA</i>FAISS</span><span class="skill-chip"><i>PN</i>Pinecone</span><span class="skill-chip"><i>WV</i>Weaviate</span><span class="skill-chip"><i>MF</i>MLflow</span><span class="skill-chip"><i>VL</i>vLLM</span><span class="skill-chip"><i>TR</i>TensorRT</span><span class="skill-chip"><i>DK</i>Docker</span><span class="skill-chip"><i>AF</i>Airflow</span><span class="skill-chip"><i>K8</i>Kubernetes</span><span class="skill-chip"><i>CI</i>CI/CD</span>
+            </div>
+          </article>
+          <article class="skill-category" data-cat="data">
+            <div class="skill-category-head">
+              <span class="skill-category-icon" aria-hidden="true">◆</span>
+              <div>
+                <h3>Data</h3>
+                <p>Warehousing, ETL/ELT, analytics engineering, and cloud-native data platforms.</p>
+              </div>
+            </div>
+            <div class="skill-list">
+              <span class="skill-chip"><i>SQL</i>SQL</span><span class="skill-chip"><i>PY</i>Python</span><span class="skill-chip"><i>SP</i>Spark</span><span class="skill-chip"><i>DB</i>dbt</span><span class="skill-chip"><i>SF</i>Snowflake</span><span class="skill-chip"><i>BQ</i>BigQuery</span><span class="skill-chip"><i>PG</i>PostgreSQL</span><span class="skill-chip"><i>EC</i>AWS EC2</span><span class="skill-chip"><i>S3</i>S3</span><span class="skill-chip"><i>AT</i>Athena</span><span class="skill-chip"><i>AZ</i>Azure Synapse</span>
+            </div>
+          </article>
+          <article class="skill-category" data-cat="backend">
+            <div class="skill-category-head">
+              <span class="skill-category-icon" aria-hidden="true">&lt;/&gt;</span>
+              <div>
+                <h3>Backend</h3>
+                <p>APIs, async services, tooling, version control, Linux workflows, and notebooks.</p>
+              </div>
+            </div>
+            <div class="skill-list">
+              <span class="skill-chip"><i>FA</i>FastAPI</span><span class="skill-chip"><i>API</i>REST APIs</span><span class="skill-chip"><i>OA</i>OpenAI API</span><span class="skill-chip"><i>AS</i>Async Services</span><span class="skill-chip"><i>$</i>Bash</span><span class="skill-chip"><i>C++</i>C++</span><span class="skill-chip"><i>JS</i>JavaScript</span><span class="skill-chip"><i>GT</i>Git</span><span class="skill-chip"><i>LX</i>Linux/Ubuntu</span><span class="skill-chip"><i>JP</i>Jupyter</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="education section-shell" data-section>
+      <div class="education-card reveal">
+        <div>
+          <p class="eyebrow">Education</p>
+          <h2>University of Cincinnati</h2>
+          <p>M.S. in Information Technology · GPA 4.0 · Graduated Apr 2026</p>
+          <div class="course-list">
+            <span>Machine Learning & Data Mining</span>
+            <span>Deep Learning</span>
+            <span>Natural Language Processing</span>
+            <span>Cloud Computing</span>
+            <span>Azure Data Engineering</span>
+            <span>IT Research Methodologies</span>
+          </div>
+        </div>
+        <div class="gpa-ring" aria-label="Graduate GPA 4.0 out of 4.0">
+          <small>Graduate GPA</small>
+          <span>4.0</span>
+          <em>/ 4.0</em>
+          <div class="gpa-meter" aria-hidden="true"><i></i></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact section-shell" id="contact" data-section>
+      <div class="contact-card reveal">
+        <div>
+          <p class="eyebrow">Let’s build production AI</p>
+          <h2>Need an engineer who can optimize LLMs, ship RAG systems, and make ML pipelines observable?</h2>
+          <p>I’m ready to bring research-grade AI into measurable production outcomes.</p>
+        </div>
+        <div class="contact-actions">
+          <a class="primary-cta magnetic" href="mailto:venkatsaisubash.2003@gmail.com?subject=AI%2FML%20Engineering%20Opportunity%20for%20Venkat"><svg class="link-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3.5 6.75A2.75 2.75 0 0 1 6.25 4h11.5a2.75 2.75 0 0 1 2.75 2.75v10.5A2.75 2.75 0 0 1 17.75 20H6.25a2.75 2.75 0 0 1-2.75-2.75V6.75Zm2.05-.22 6.45 5.12 6.45-5.12a1.25 1.25 0 0 0-.7-.22H6.25c-.26 0-.5.08-.7.22Zm13.45 2.02-6.23 4.95a1.25 1.25 0 0 1-1.54 0L5 8.55v8.7c0 .69.56 1.25 1.25 1.25h11.5c.69 0 1.25-.56 1.25-1.25v-8.7Z"/></svg><span>Email Venkat</span></a>
+          <button class="secondary-cta magnetic" id="copy-email" type="button"><svg class="link-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3.5 6.75A2.75 2.75 0 0 1 6.25 4h11.5a2.75 2.75 0 0 1 2.75 2.75v10.5A2.75 2.75 0 0 1 17.75 20H6.25a2.75 2.75 0 0 1-2.75-2.75V6.75Zm2.05-.22 6.45 5.12 6.45-5.12a1.25 1.25 0 0 0-.7-.22H6.25c-.26 0-.5.08-.7.22Zm13.45 2.02-6.23 4.95a1.25 1.25 0 0 1-1.54 0L5 8.55v8.7c0 .69.56 1.25 1.25 1.25h11.5c.69 0 1.25-.56 1.25-1.25v-8.7Z"/></svg><span>Copy email</span></button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Venkat Sai Subash Panchakarla. Designed as a high-impact AI/ML portfolio.</p>
+    <a href="#top">Back to top ↑</a>
+  </footer>
+
+
+  <audio id="ambient-audio" src="assets/soothing-honey-ambient.wav" loop preload="auto"></audio>
+  <audio id="hover-audio" src="assets/soft-hover-chime.wav" preload="auto"></audio>
+
+  <div class="modal-backdrop" id="project-modal" aria-hidden="true">
+    <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <button class="modal-close" id="modal-close" aria-label="Close project details">×</button>
+      <p class="eyebrow" id="modal-kicker"></p>
+      <h2 id="modal-title"></h2>
+      <p id="modal-description"></p>
+      <div class="modal-metrics" id="modal-metrics"></div>
+      <div class="modal-stack" id="modal-stack"></div>
+    </div>
+  </div>
+
+  <div class="command-palette" id="command-palette" aria-hidden="true">
+    <div class="command-panel" role="dialog" aria-modal="true" aria-label="Command palette">
+      <div class="command-search">
+        <span>⌘K</span>
+        <input id="command-input" type="text" placeholder="Jump to section or open links..." autocomplete="off" />
+      </div>
+      <div class="command-list" id="command-list"></div>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite">Email copied</div>
+  <script src="script.js"></script>
+</body>
+</html>
